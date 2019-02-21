@@ -340,24 +340,79 @@ main{
 
 .skillVis{
   grid-area: skillVis;
-  border:1px solid green;
   position: relative;
+  padding: 2rem 1rem 0 20%;
 }
 
 .skillVis > h3{
   font-size: 1rem;
+  margin-bottom: 0.2rem;
 }
 
 .skillVis > div{
-  width:50%;
+  width:60%;
   height: 0.4rem;
   background:#e1ccc9;
   border-radius: 10px;
+  margin-bottom: 0.6rem;
+  position: relative;
+}
+
+.skillVis > div:nth-of-type(1)::before{ /* HTML & CSS */
+  position: absolute;
+  content:'';
+  height: 0.4rem;
+  border-radius: 10px;
+  width: 80%;
+  background: #b38578;
+}
+
+.skillVis > div:nth-of-type(2)::before{ /* js */
+  position: absolute;
+  content:'';
+  height: 0.4rem;
+  border-radius: 10px;
+  width: 75%;
+  background: #b38578;
+}
+
+.skillVis > div:nth-of-type(3)::before{ /* vue.js */
+  position: absolute;
+  content:'';
+  height: 0.4rem;
+  border-radius: 10px;
+  width: 45%;
+  background: #b38578;
+}
+
+.skillVis > div:nth-of-type(4)::before{ /* jQuery */
+  position: absolute;
+  content:'';
+  height: 0.4rem;
+  border-radius: 10px;
+  width: 60%;
+  background: #b38578;
 }
 
 .skills{
   grid-area:skills;
-  border:1px solid red;
+  padding-top: 2rem;
+}
+
+.skills > p{
+  margin-bottom: 0.8rem;
+  margin-left: -10%;
+  margin-right: 5%;
+  position: relative;
+}
+
+.skills > p::before{
+  content: '';
+  position: absolute;
+  border:0.3rem solid #e1ccc9;
+  border-radius: 50%;
+  left: -4%;
+  top:20%;
 }
 
 /* SECTION 3 - projects */
