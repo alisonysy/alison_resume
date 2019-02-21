@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <title>翁倩怡的简历</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="h1-wrapper">
+          <h1>翁倩怡</h1>
+      </div>
+      <div class="img-wrapper">
+          <img src="./img/profilePic.jpg" alt="照片">
+      </div>
+    </header>
+    <main>
+      <section class="education">
+        <h2 class="education-zh">教育经历</h2><h2 class="education-en">Education</h2>
+        <div class="educationDetails">
+          <div id="uoa" class="uni">
+            <span>{{uoa.uni}}</span>
+            <span>{{uoa.major}}</span>
+            <span>{{uoa.gpa}}</span>
+            <span>{{uoa.time}}</span>
+            <p><strong>主修课程：</strong>数据挖掘，数据可视化，项目管理，市场调查，市场策略等</p>
+          </div>
+          <div id="xmu" class="uni">
+            <span>{{xmu.uni}}</span>
+            <span>{{xmu.major}}</span>
+            <span>{{xmu.gpa}}</span>
+            <span>{{xmu.time}}</span>
+            <p></p>
+          </div>
+        </div>
+      </section>
+      <div class="basics"></div>
+      <section class="skills">
+
+      </section>
+      <section class="projects">
+      </section>
+    </main>
+    <script src="../node_modules/vue/dist/vue.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

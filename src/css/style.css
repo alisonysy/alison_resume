@@ -1,0 +1,179 @@
+*{padding:0;margin: 0;box-sizing: border-box}
+html{font-size: 14px;font-family: Tahoma,"微软雅黑"}
+body{width:100vw;height: 80rem;}
+body::-webkit-scrollbar{width:0 !important;}
+ul,li{list-style: none;}
+a{text-decoration: none;}
+
+/* 1280px * 1811px 
+1280px = 91.5rem
+1811px = 130rem*/
+
+/* HEADER */
+header{
+  width:100%;
+  height:16rem;
+  background: #e1ccc9;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 100%;
+}
+
+
+header > .h1-wrapper > h1{
+  letter-spacing: 1.6rem;
+  color: #715353;
+  font-size: 4rem;
+  width:30rem;
+  height:8rem;
+  margin: 4rem auto;
+  line-height: 8rem;
+  text-align: center;
+  background: #eee;
+  position: relative;
+}
+
+header > .h1-wrapper > h1::before{
+  content: "";
+  position: absolute;
+  height: 90%;
+  width:97%;
+  border:2px solid #dbb6b0;
+  top: 3%;
+  left: 1%;
+}
+
+header > .h1-wrapper > h1::after{
+  content: '';
+  position: absolute;
+  width:12rem;
+  border: 2px solid #dbb6b0;
+  top:50%;
+  left:100%;
+}
+
+header > .img-wrapper{
+  width:12rem;
+  height: 12rem;
+  border-radius: 50%;
+  border:0.5rem solid #dbb6b0;
+  overflow: hidden;
+  position: relative;
+  align-self: center;
+}
+
+header > .img-wrapper > img{
+  width:110%;
+  position: absolute;
+  top:-8%;
+  left: -5%;
+}
+
+main{
+  width:100%;
+  height: 64rem;
+  border:1px solid green;
+  display: grid;
+  grid-template-columns: 20% 20% 25% 15% 20%;
+  grid-template-rows: 16rem 16rem 32rem;
+  grid-template-areas: 
+    "education education education basics basics"
+    "skills skills skills skills ."
+    "projects projects projects projects projects"
+}
+
+/* SECTION 1 - Education & basic info */
+.education{
+  grid-area: education;
+  border:1px solid red;
+}
+
+.education > h2{
+  display: inline-block;
+  height:25%;
+}
+
+.education > .educationDetails > #uoa{
+  width:100%;
+  display: grid;
+  grid-template-columns: repeat(4,25%);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "uni major gpa time"
+    "p p p p"
+}
+
+.education > .educationDetails > #uoa > span:nth-of-type(1){
+  grid-area:uni;
+}
+
+.education > .educationDetails > #uoa > span:nth-of-type(2){
+  grid-area:major;
+}
+
+.education > .educationDetails > #uoa > span:nth-of-type(3){
+  grid-area:gpa;
+}
+
+.education > .educationDetails > #uoa > span:nth-of-type(4){
+  grid-area:time;
+}
+
+.education > .educationDetails > #uoa > p{
+  grid-area: p;
+}
+
+
+.education > .educationDetails > #xmu{
+  width:100%;
+  display: grid;
+  grid-template-columns: repeat(4,25%);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "uni major gpa time"
+    "p p p p"
+}
+
+.education > .educationDetails > #xmu > span:nth-of-type(1){
+  grid-area:uni;
+}
+
+.education > .educationDetails > #xmu > span:nth-of-type(2){
+  grid-area:major;
+}
+
+.education > .educationDetails > #xmu > span:nth-of-type(3){
+  grid-area:gpa;
+}
+
+.education > .educationDetails > #xmu > span:nth-of-type(4){
+  grid-area:time;
+}
+
+.education > .educationDetails > #xmu > p{
+  grid-area: p;
+}
+
+.basics{
+  grid-area: basics;
+}
+
+/* SECTION 2 - skills */
+.skills{
+  grid-area:skills;
+}
+
+/* SECTION 3 - projects */
+.projects{
+  grid-area:projects;
+}
+
+
+
+@media (max-width:595px){ /*a4 size:595px * 842px */
+  .test{
+    width:10rem;
+    height:20rem;
+    border:1px solid green;
+  }
+}
