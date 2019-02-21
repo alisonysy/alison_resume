@@ -82,9 +82,10 @@ main{
   height: 64rem;
   display: grid;
   grid-template-columns: 20% 20% 25% 15% 20%;
-  grid-template-rows: 16rem 16rem 32rem;
+  grid-template-rows: 16rem 4rem 12rem 32rem;
   grid-template-areas: 
     "education education education basics basics"
+    "skillHead skillHead skillHead skillHead skillHead"
     "skillVis skillVis skills skills skills"
     "projects projects projects projects projects"
 }
@@ -123,7 +124,6 @@ main{
 
 .education > h2:nth-of-type(2){
   font-size: 1.2rem;
-
 }
 
 .education > .educationDetails > #uoa{
@@ -283,9 +283,76 @@ main{
   height: 1.7rem;
 }
 /* SECTION 2 - skills */
+.skillHead{
+  grid-area: skillHead;
+  display: inline-block;
+  letter-spacing: 1rem;
+  justify-self: center;
+  align-self: end;
+  color:#fff;
+  background:#e1ccc9;
+  padding: 0.8rem 1.5rem;
+  position: relative;
+}
+
+.skillHead::before{
+  content:'';
+  width:100%;
+  position: absolute;
+  border:1px solid #d7d5d6;
+  left: -100%;
+  top:50%;
+}
+
+.skillHead::after{
+  content:'';
+  height:50%;
+  position: absolute;
+  border:1px solid #d7d5d6;
+  left: -100%;
+  top:50%;
+}
+
+.skillHead > span{
+  letter-spacing: 0;
+  font-size: 1.2rem;
+  color:#fff;
+  background:#e1ccc9;
+}
+
+.skillHead > span::before{
+  content:'';
+  width:100%;
+  position: absolute;
+  border:1px solid #d7d5d6;
+  right: -100%;
+  top:50%;
+}
+
+.skillHead > span::after{
+  content:'';
+  height:50%;
+  position: absolute;
+  border:1px solid #d7d5d6;
+  right: -100%;
+  top:50%;
+}
+
 .skillVis{
   grid-area: skillVis;
   border:1px solid green;
+  position: relative;
+}
+
+.skillVis > h3{
+  font-size: 1rem;
+}
+
+.skillVis > div{
+  width:50%;
+  height: 0.4rem;
+  background:#e1ccc9;
+  border-radius: 10px;
 }
 
 .skills{
