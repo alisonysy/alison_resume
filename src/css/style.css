@@ -76,16 +76,16 @@ header > .img-wrapper > img{
   left: -5%;
 }
 
+/* MAIN */
 main{
   width:100%;
   height: 64rem;
-  border:1px solid green;
   display: grid;
   grid-template-columns: 20% 20% 25% 15% 20%;
   grid-template-rows: 16rem 16rem 32rem;
   grid-template-areas: 
     "education education education basics basics"
-    "skills skills skills skills ."
+    "skillVis skillVis skills skills skills"
     "projects projects projects projects projects"
 }
 
@@ -215,13 +215,82 @@ main{
   grid-area: p;
 }
 
+
+/* SECTION 1 - basics */
 .basics{
   grid-area: basics;
+  position: relative;
 }
 
+.basics::before{
+  content: '';
+  position: absolute;
+  border:1px solid #e1ccc9;
+  height: 16rem;
+  left:10%;
+}
+
+.basics > #basics {
+  margin:5rem 0 0 7rem;
+  position: relative;
+}
+
+.basics > #basics > li{
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.basics > #basics > li::before{
+  border:1px dashed #e1ccc975;
+  content: '';
+  position: absolute;
+  top:1.7rem;
+  left:0;
+  width:80%;
+}
+
+.basics > #basics > svg:nth-of-type(1){
+  position: absolute;
+  top: -0.7rem;
+  left: 70%;
+}
+
+.basics > #basics > svg:nth-of-type(2){
+  position: absolute;
+  top: 1.7rem;
+  left: 70%;
+}
+
+.basics > #basics > svg:nth-of-type(3){
+  position: absolute;
+  top: 4rem;
+  left: 71%;
+}
+
+.basics > #basics > svg:nth-of-type(4){
+  position: absolute;
+  top: 6.5rem;
+  left: 72.5%;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.basics > #basics > svg:nth-of-type(5){
+  position: absolute;
+  top: 8.9rem;
+  left: 73%;
+  width: 1.7rem;
+  height: 1.7rem;
+}
 /* SECTION 2 - skills */
+.skillVis{
+  grid-area: skillVis;
+  border:1px solid green;
+}
+
 .skills{
   grid-area:skills;
+  border:1px solid red;
 }
 
 /* SECTION 3 - projects */
