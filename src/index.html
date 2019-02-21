@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <script src="../node_modules/vue/dist/vue.min.js"></script>
-    <script src="//at.alicdn.com/t/font_1053952_z2dr66z1k6m.js"></script>
+    <script src="//at.alicdn.com/t/font_1053952_0ws9ffwwvran.js"></script>
   </head>
   <body>
     <header>
@@ -66,14 +66,70 @@
       </section>
       <section class="skills">
         <p>熟练掌握<strong>HTML(5)、CSS(3)</strong>和<strong>JavaScript(ES6)</strong>等前端技术，如HTML5语义化标签运用，<strong>箭头函数、Promise、async/await进行异步操作</strong>，CSS3媒体查询、动画等</p>
-        <p>使用原生JS实现动态响应网页和较复杂功能</p>
+        <p>使用原生JS实现动态响应网页和较复杂功能，熟悉并实践<strong>MVC设计模式</strong></p>
         <p>了解<strong>Vue.js</strong>前端框架，有使用Vue.js和<strong>jQuery</strong>实现项目经验</p>
         <p>熟悉<strong>移动端开发</strong>，实现响应式布局，了解HTTP基础和Node.js后端基础知识</p>
       </section>
       <section class="projects">
+        <div class="heading">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-xiangmu"></use>
+            </svg>
+          <h2>项目<span>Projects</span></h2>
+        </div>
+        <div class="proName project1">
+          <h3>简易歌曲在线上传页面</h3>
+          <p><a href="">Demo链接(点我)</a></p>
+          <p class="comment"><em>备注：</em>项目开发阶段是利用Node.js搭建本地服务器进行接口对接和页面渲染模拟，此链接预览仅展示界面，无法操作</p>
+          <p><a href="">GitHub源码(点我)</a><a href="" download="">Demo小视频(点我)</a></p>
+        </div>
+        <div class="description project1">
+          <p>
+            <strong>作品描述：</strong>
+            模拟一个音乐APP在PC端的歌曲上传和管理页面。管理员能对音乐文件进行增删改查，点击选择文件或拖拽上传，
+            上传成功后能编辑对应信息，同时能查看保存了的音乐文件，并能再次编辑或删除。本项目是通过七牛云、LeanCloud数据库储存上传的音乐文件和相关信息。
+          </p>
+          <p>
+              <strong>实现技术：</strong>
+              JavaScript(ES6) + JQuery + HTML + CSS + 七牛云 + LeanCloud
+          </p>
+        </div>
+        <div class="proName project2">
+            <h3>快捷导航页面</h3>
+            <p><a href="">Demo链接(点我)</a></p>
+            <p><a href="">GitHub源码(点我)</a></p>
+        </div>
+        <div class="description project2">
+          <p>
+            <strong>作品描述：</strong>
+            用户可自定义的快捷导航页，模拟键盘界面，按下对应的键盘键自动打开新标签页并跳转到目标网站。
+            用户可点击每个快捷按键右下方的E添加/覆盖自定义网站。
+          </p>
+          <p>
+              <strong>实现技术：</strong>
+              JavaScript(e.g. WebAPI、事件监听) + HTML + CSS 
+          </p>
+        </div>
+        <div class="proName project3">
+          <h3>个人简历网站模板</h3>
+          <p><a href="">Demo链接(点我)</a></p>
+          <p><a href="">GitHub源码(点我)</a></p>
+        </div>
+        <div class="description project3">
+          <p>
+            <strong>作品描述：</strong>
+            一个个人简历动态网站，包含基本信息、技能、作品集、实时留言功能等4个模块。实现置顶菜单栏下拉悬浮，
+            模块点击切换动态效果，利用异步操作实现实时留言功能。
+          </p>
+          <p>
+              <strong>实现技术：</strong>
+              JavaScript + HTML + CSS + Swiper库 + Tween库
+          </p>
+        </div>
       </section>
     </main>
-
+    <footer>Copyright 2019. This resume's GitHubRepo: <a href="https://github.com/alisonysy/alison_resume">https://github.com/alisonysy/alison_resume</a>.
+       All Rights Reserved.</footer>
     <script src="./js/main.js"></script>
 
   </body>

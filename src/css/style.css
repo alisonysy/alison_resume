@@ -79,10 +79,10 @@ header > .img-wrapper > img{
 /* MAIN */
 main{
   width:100%;
-  height: 64rem;
+  height: 68rem;
   display: grid;
   grid-template-columns: 20% 20% 25% 15% 20%;
-  grid-template-rows: 16rem 4rem 12rem 32rem;
+  grid-template-rows: 16rem 4rem 12rem 36rem;
   grid-template-areas: 
     "education education education basics basics"
     "skillHead skillHead skillHead skillHead skillHead"
@@ -418,14 +418,232 @@ main{
 /* SECTION 3 - projects */
 .projects{
   grid-area:projects;
+  display: grid;
+  grid-template-columns: repeat(3,33.333%);
+  grid-template-rows: 4rem 12rem 10rem 10rem;
+  grid-template-areas: 
+    ". heading ."
+    "pro1 descr1 descr1"
+    "pro2 descr2 descr2"
+    "pro3 descr3 descr3";
+
+}
+
+.projects > .heading{
+  grid-area: heading;
+  position: relative;
+  text-align: center;
+}
+
+.projects > .heading> .icon{
+  position: absolute;
+  z-index: 1;
+  left: 15%;
+  top: 37%;
+}
+
+.projects > .heading > h2{
+  display: inline-block;
+  color:#fff;
+  background:#e1ccc9;
+  padding: 0.8rem 3rem 0.8rem 5rem;
+  letter-spacing: 1rem;
+  margin-top: 0.8rem;
+  position: relative;
 }
 
 
+.projects > .heading > h2::before{
+  content:'';
+  width:87%;
+  position: absolute;
+  border:1px solid #d7d5d6;
+  left: -87%;
+  top:50%;
+}
 
-@media (max-width:595px){ /*a4 size:595px * 842px */
-  .test{
-    width:10rem;
-    height:20rem;
-    border:1px solid green;
-  }
+.projects > .heading > h2::after{
+  content:'';
+  height:50%;
+  position: absolute;
+  border:1px solid #d7d5d6;
+  left: -87%;
+  top:50%;
+}
+
+.projects > .heading > h2 > span{
+  font-size: 1.2rem;
+  letter-spacing: 0;
+  color:#fff;
+}
+
+.projects > .heading > h2 > span::before{
+  content:'';
+  width:87%;
+  position: absolute;
+  border:1px solid #d7d5d6;
+  right: -87%;
+  top:50%;
+}
+
+.projects > .heading > h2 > span::after{
+  content:'';
+  height:50%;
+  position: absolute;
+  border:1px solid #d7d5d6;
+  right: -87%;
+  top:50%;
+}
+
+/* FIRST PROJECT */
+.projects > .proName.project1{
+  grid-area: pro1;
+  text-align: center;
+}
+
+.projects > .proName.project1 > h3{
+  font-size: 1rem;
+  margin: 1rem auto;
+
+}
+
+.projects > .proName.project1 > p{
+  margin: 0.7rem 0;
+}
+
+.projects > .proName.project1 > p a{
+  color:#b38578;
+  padding-left: 1rem;
+}
+
+.projects > .proName.project1 > .comment{
+  font-size: 0.8rem;
+  color: #dbb6b0;
+  padding: 0 1rem;
+}
+
+.projects > .proName.project1 > .comment > em{
+  color: #dbb6b0;
+}
+
+.projects > .description.project1{
+  grid-area: descr1;
+  padding: 1rem 1rem 0 2rem;
+}
+
+.projects > .description.project1 > p{
+  line-height: 1.7rem;
+  margin-top: 0.8rem;
+}
+
+.projects > .proName.project2::before{ /*divider*/
+  position: absolute;
+  content: '';
+  width:90%;
+  left:10%;
+  top: -5%;
+  border:1px dashed #e1ccc9;
+}
+
+.projects > .description.project2::before{ /*divider*/
+  position: absolute;
+  content: '';
+  width:90%;
+  right:10%;
+  top: -5%;
+  border:1px dashed #e1ccc9;
+}
+
+/* SECOND PROJECT */
+
+.projects > .proName.project2{
+  grid-area: pro2;
+  position: relative;
+  text-align: center;
+}
+
+.projects > .proName.project2 > h3{
+  font-size: 1rem;
+  margin: 2rem auto 1rem auto;
+}
+
+.projects > .proName.project2 > p{
+  margin: 0.7rem 0;
+}
+
+.projects > .proName.project2 > p a{
+  color:#b38578;
+  padding-left: 1rem;
+}
+
+.projects > .description.project2{
+  grid-area: descr2;
+  padding: 1rem 1rem 0 2rem;
+  position: relative;
+}
+
+.projects > .description.project2 > p{
+  line-height: 1.7rem;
+  margin-top: 0.8rem;
+}
+
+.projects > .proName.project3::before{ /*divider*/
+  position: absolute;
+  content: '';
+  width:90%;
+  left:10%;
+  top: -5%;
+  border:1px dashed #e1ccc9;
+}
+
+.projects > .description.project3::before{ /*divider*/
+  position: absolute;
+  content: '';
+  width:90%;
+  right:10%;
+  top: -5%;
+  border:1px dashed #e1ccc9;
+}
+
+/* THIRD PROJECT */
+.projects > .proName.project3{
+  grid-area: pro3;
+  position: relative;
+  text-align: center;
+}
+
+.projects > .proName.project3 > h3{
+  font-size: 1rem;
+  margin: 2rem auto 1rem auto;
+}
+
+.projects > .proName.project3 > p{
+  margin: 0.7rem 0;
+}
+
+.projects > .proName.project3 > p a{
+  color:#b38578;
+  padding-left: 1rem;
+}
+
+.projects > .description.project3{
+  grid-area: descr3;
+  padding: 1rem 1rem 0 2rem;
+  position: relative;
+}
+
+.projects > .description.project3 > p{
+  line-height: 1.7rem;
+  margin-top: 0.8rem;
+}
+
+/* FOOTER */
+footer{
+  width: 100%;
+  background: #e1ccc9;
+  font-size: 0.6rem;
+  text-align: center;
+  color: #715353;
+  height: 2.2rem;
+  line-height: 2.2rem;
 }
