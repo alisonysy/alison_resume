@@ -1,10 +1,17 @@
-*{padding:0;margin: 0;box-sizing: border-box}
-html{font-size: 14px;font-family: Tahoma,"微软雅黑"}
-body{width:100vw;height: 80rem;}
+*{padding:0;margin: 0;box-sizing: border-box;color: #715353;}
+html{font-size: 13px;font-family: Tahoma,"微软雅黑"}
+body{width:100vw;height: 85rem;}
 body::-webkit-scrollbar{width:0 !important;}
 ul,li{list-style: none;}
 a{text-decoration: none;}
 
+/* svg icon setup*/
+.icon {
+  width: 2.2rem; height: 2.2rem;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
 /* 1280px * 1811px 
 1280px = 91.5rem
 1811px = 130rem*/
@@ -46,7 +53,7 @@ header > .h1-wrapper > h1::before{
 header > .h1-wrapper > h1::after{
   content: '';
   position: absolute;
-  width:12rem;
+  width:15rem;
   border: 2px solid #dbb6b0;
   top:50%;
   left:100%;
@@ -85,26 +92,65 @@ main{
 /* SECTION 1 - Education & basic info */
 .education{
   grid-area: education;
-  border:1px solid red;
+  text-align: center;
+}
+
+.education > svg{
+  vertical-align: middle;
+  margin-right: 0.5rem;
 }
 
 .education > h2{
   display: inline-block;
-  height:25%;
+  height:50%;
+  padding-top: 4rem;
+  color:#b38578;
+}
+
+.education > h2:nth-of-type(1){
+  letter-spacing: 1rem;
+  position: relative;
+}
+
+.education > h2:nth-of-type(1)::before{
+  content:'';
+  position: absolute;
+  border:2px solid #e1ccc9;
+  width:16rem;
+  top:78%;
+  left:-3px;
+}
+
+.education > h2:nth-of-type(2){
+  font-size: 1.2rem;
+
 }
 
 .education > .educationDetails > #uoa{
   width:100%;
   display: grid;
-  grid-template-columns: repeat(4,25%);
+  grid-template-columns: 20% 40% 15% 25%;
   grid-template-rows: auto;
   grid-template-areas:
     "uni major gpa time"
-    "p p p p"
+    "p p p p";
+  grid-row-gap: 0.6rem;
+  justify-items: start;
+  padding-left: 4rem;
 }
 
 .education > .educationDetails > #uoa > span:nth-of-type(1){
   grid-area:uni;
+  position: relative;
+}
+
+.education > .educationDetails > #uoa > span:nth-of-type(1)::before{
+  content: '';
+  position: absolute;
+  border:0.5rem solid #e1ccc9;
+  border-radius: 50%;
+  left: -40%;
+  top:15%;
 }
 
 .education > .educationDetails > #uoa > span:nth-of-type(2){
@@ -113,6 +159,7 @@ main{
 
 .education > .educationDetails > #uoa > span:nth-of-type(3){
   grid-area:gpa;
+  justify-self: center;
 }
 
 .education > .educationDetails > #uoa > span:nth-of-type(4){
@@ -127,15 +174,28 @@ main{
 .education > .educationDetails > #xmu{
   width:100%;
   display: grid;
-  grid-template-columns: repeat(4,25%);
+  grid-template-columns: 20% 40% 15% 25%;
   grid-template-rows: auto;
   grid-template-areas:
     "uni major gpa time"
-    "p p p p"
+    "p p p p";
+  grid-row-gap: 0.6rem;
+  margin-top: 0.8rem;
+  justify-items: start;
+  padding-left: 4rem;
 }
 
 .education > .educationDetails > #xmu > span:nth-of-type(1){
   grid-area:uni;
+  position: relative;
+}
+
+.education > .educationDetails > #xmu > span:nth-of-type(1)::before{
+  content: '';
+  position: absolute;
+  border:0.5rem solid #e1ccc9;
+  border-radius: 50%;
+  left: -50%;
 }
 
 .education > .educationDetails > #xmu > span:nth-of-type(2){
@@ -144,6 +204,7 @@ main{
 
 .education > .educationDetails > #xmu > span:nth-of-type(3){
   grid-area:gpa;
+  justify-self: center;
 }
 
 .education > .educationDetails > #xmu > span:nth-of-type(4){
