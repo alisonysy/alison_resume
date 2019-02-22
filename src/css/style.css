@@ -81,12 +81,13 @@ main{
   width:100%;
   display: grid;
   grid-template-columns: 20% 20% 25% 15% 20%;
-  grid-template-rows: 16rem 3.6rem 12rem 1fr;
+  grid-template-rows: 16rem 3.6rem 12rem 1fr 30rem;
   grid-template-areas: 
     "education education education basics basics"
     "skillHead skillHead skillHead skillHead skillHead"
     "skillVis skillVis skills skills skills"
     "projects projects projects projects projects"
+    "internship internship internship internship internship"
 }
 
 /* SECTION 1 - Education & basic info */
@@ -419,7 +420,7 @@ main{
   grid-area:projects;
   display: grid;
   grid-template-columns: repeat(3,33.333%);
-  grid-template-rows: 4.6rem 12rem 10rem 10rem 6rem 10rem;
+  grid-template-rows: 4.6rem 12rem 10rem 10rem 6rem 10rem 10rem 12rem 10rem;
   grid-template-areas: 
     ". heading ."
     "pro1 descr1 descr1"
@@ -427,7 +428,9 @@ main{
     "pro3 descr3 descr3"
     ". tbc ."
     "pro4 descr4 descr4"
-    "pro5 descr5 descr5";
+    "pro5 descr5 descr5"
+    "pro6 descr6 descr6"
+    "pro7 descr7 descr7";
 
 }
 
@@ -647,6 +650,69 @@ main{
 
 .projects > .description.project5{
   grid-area: descr5;
+}
+
+.projects > .proName.project6::before{ /*divider*/
+  position: absolute;
+  content: '';
+  width:90%;
+  left:10%;
+  top: -5%;
+  border:1px dashed #e1ccc9;
+}
+
+.projects > .description.project6::before{ /*divider*/
+  position: absolute;
+  content: '';
+  width:90%;
+  right:10%;
+  top: -5%;
+  border:1px dashed #e1ccc9;
+}
+
+/* SIXTH PROJECT */
+.projects > .proName.project6{
+  grid-area: pro6;
+  position: relative;
+  text-align: center;
+}
+
+.projects > .description.project6{
+  grid-area: descr6;
+}
+
+.projects > .proName.project7::before{ /*divider*/
+  position: absolute;
+  content: '';
+  width:90%;
+  left:10%;
+  top: -5%;
+  border:1px dashed #e1ccc9;
+}
+
+.projects > .description.project7::before{ /*divider*/
+  position: absolute;
+  content: '';
+  width:90%;
+  right:10%;
+  top: -5%;
+  border:1px dashed #e1ccc9;
+}
+
+/* SEVENTH PROJECT */
+.projects > .proName.project7{
+  grid-area: pro7;
+  position: relative;
+  text-align: center;
+}
+
+.projects > .description.project7{
+  grid-area: descr7;
+}
+/* SECTION 4 - Internship */
+.internship{
+  grid-area:internship;
+  border:1px solid palevioletred;
 }
 
 /* FOOTER */
