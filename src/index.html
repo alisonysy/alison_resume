@@ -189,10 +189,30 @@
         <div class="tbc">To Be Continued Next Page</div>
       </section>
       <section class="internship">
-
+        <div class="heading">
+          <h2>实习经历<span>Internship</span></h2>
+        </div>
+        <span class="intern_h1_1"><strong>{{company.jd}}</strong></span><span class="intern_h1_2">{{position.jd}}</span><span class="intern_h1_3">{{time.jd}}</span>
+        <ul class="intern_d1">
+          <li v-for="value in descr_jd">
+            {{value}}
+          </li>
+        </ul>
+        <span class="intern_h2_1"><strong>{{company.ag}}</strong></span><span class="intern_h2_2">{{position.ag}}</span><span class="intern_h2_3">{{time.ag}}</span>
+        <ul class="intern_d2">
+          <li v-for="value in descr_ag">
+            {{value}}
+          </li>
+        </ul>
+        <span class="intern_h3_1"><strong>{{company.yt}}</strong></span><span class="intern_h3_2">{{position.yt}}</span><span class="intern_h3_3">{{time.yt}}</span>
+        <ul class="intern_d3">
+          <li v-for="value in descr_yt">
+            {{value}}
+          </li>
+        </ul>
       </section>
     </main>
-    <footer>Copyright 2019. This resume's GitHubRepo: <a href="https://github.com/alisonysy/alison_resume">https://github.com/alisonysy/alison_resume</a>.
+    <footer>Copyright 2019. 本简历制作源码: <a href="https://github.com/alisonysy/alison_resume">https://github.com/alisonysy/alison_resume</a>.
        All Rights Reserved.</footer>
     <script src="./js/main.js"></script>
 

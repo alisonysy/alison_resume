@@ -81,7 +81,7 @@ main{
   width:100%;
   display: grid;
   grid-template-columns: 20% 20% 25% 15% 20%;
-  grid-template-rows: 16rem 3.6rem 12rem 1fr 30rem;
+  grid-template-rows: 16rem 3.6rem 12rem 1fr 38rem;
   grid-template-areas: 
     "education education education basics basics"
     "skillHead skillHead skillHead skillHead skillHead"
@@ -440,12 +440,6 @@ main{
   text-align: center;
 }
 
-.projects > .heading> .icon{
-  position: absolute;
-  z-index: 1;
-  left: 15%;
-  top: 37%;
-}
 
 .projects > .heading > h2{
   display: inline-block;
@@ -711,17 +705,218 @@ main{
 }
 /* SECTION 4 - Internship */
 .internship{
+  margin-top: 1rem;
   grid-area:internship;
-  border:1px solid palevioletred;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: 4.6rem 3rem 8rem 3rem 8rem 3rem 7rem;
+  grid-template-areas: 
+    ". heading ."
+    "intern_h1_1 intern_h1_2 intern_h1_3"
+    "intern_d1 intern_d1 intern_d1"
+    "intern_h2_1 intern_h2_2 intern_h2_3"
+    "intern_d2 intern_d2 intern_d2"
+    "intern_h3_1 intern_h3_2 intern_h3_3"
+    "intern_d3 intern_d3 intern_d3"
+}
+
+.internship > .heading{
+  grid-area: heading;
+  position: relative;
+  text-align: center;
+}
+
+
+.internship > .heading > h2{
+  display: inline-block;
+  color:#fff;
+  background:#e1ccc9;
+  padding: 0.8rem 3rem 0.8rem 3rem;
+  letter-spacing: 1rem;
+  margin-top: 0.8rem;
+  position: relative;
+}
+
+
+.internship > .heading > h2::before{
+  content:'';
+  width:50%;
+  position: absolute;
+  border:1px solid #d7d5d6;
+  left: -50%;
+  top:50%;
+}
+
+.internship > .heading > h2::after{
+  content:'';
+  height:50%;
+  position: absolute;
+  border:1px solid #d7d5d6;
+  left: -50%;
+  top:50%;
+}
+
+.internship > .heading > h2 > span{
+  font-size: 1.2rem;
+  letter-spacing: 0;
+  color:#fff;
+}
+
+.internship > .heading > h2 > span::before{
+  content:'';
+  width:50%;
+  position: absolute;
+  border:1px solid #d7d5d6;
+  right: -50%;
+  top:50%;
+}
+
+.internship > .heading > h2 > span::after{
+  content:'';
+  height:50%;
+  position: absolute;
+  border:1px solid #d7d5d6;
+  right: -50%;
+  top:50%;
+}
+
+/* Internship - 1 */
+
+.intern_h1_1{
+  grid-area: intern_h1_1;
+  justify-self: center;
+  padding-top: 1rem;
+  position: relative;
+}
+
+.intern_h1_1::before{
+  content: '';
+  position: absolute;
+  border:0.5rem solid #e1ccc9;
+  border-radius: 50%;
+  left: -40%;
+  top:41%;
+}
+
+.intern_h1_2{
+  grid-area: intern_h1_2;
+  justify-self: center;
+  padding-top: 1rem;
+}
+
+.intern_h1_3{
+  grid-area: intern_h1_3;
+  padding-top: 1rem;
+}
+
+/* Internship - description 1 */
+ul.intern_d1{
+  grid-area:intern_d1;
+  margin: 0 7rem;
+}
+
+ul.intern_d1>li{
+  padding-bottom: 0.6rem;
+}
+
+ul.intern_d1>li:nth-of-type(1){
+  color:#dbb6b0;
+}
+
+/* Internship - 2 */
+
+.intern_h2_1{
+  grid-area: intern_h2_1;
+  justify-self: center;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.intern_h2_1::before{
+  content: '';
+  position: absolute;
+  border:0.5rem solid #e1ccc9;
+  border-radius: 50%;
+  left: 7%;
+  top:39%;
+}
+
+.intern_h2_2{
+  grid-area: intern_h2_2;
+  justify-self: center;
+  padding-top: 1rem;
+}
+
+.intern_h2_3{
+  grid-area: intern_h2_3;
+  padding-top: 1rem;
+}
+
+/* Internship - description 2 */
+ul.intern_d2{
+  grid-area:intern_d2;
+  margin: 0 7rem;
+}
+
+ul.intern_d2>li{
+  padding-bottom: 0.6rem;
+}
+
+ul.intern_d2>li:nth-of-type(1){
+  color:#dbb6b0;
+}
+
+/* Internship - 3 */
+
+.intern_h3_1{
+  grid-area: intern_h3_1;
+  justify-self: center;
+  padding-top: 1rem;
+  position: relative;
+}
+
+.intern_h3_1::before{
+  content: '';
+  position: absolute;
+  border:0.5rem solid #e1ccc9;
+  border-radius: 50%;
+  left: -30%;
+  top:41%;
+}
+
+.intern_h3_2{
+  grid-area: intern_h3_2;
+  justify-self: center;
+  padding-top: 1rem;
+}
+
+.intern_h3_3{
+  grid-area: intern_h3_3;
+  padding-top: 1rem;
+}
+
+/* Internship - description 3 */
+ul.intern_d3{
+  grid-area:intern_d3;
+  margin: 0 7rem;
+}
+
+ul.intern_d3>li{
+  padding-bottom: 0.6rem;
+}
+
+ul.intern_d3>li:nth-of-type(1){
+  color:#dbb6b0;
 }
 
 /* FOOTER */
 footer{
   width: 100%;
   background: #e1ccc9;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   text-align: center;
   color: #715353;
-  height: 2.2rem;
-  line-height: 2.2rem;
+  height: 4.4rem;
+  line-height: 4.4rem;
 }
