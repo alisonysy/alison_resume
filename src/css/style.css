@@ -19,7 +19,7 @@ a{text-decoration: none;}
 /* HEADER */
 header{
   width:100%;
-  height:16rem;
+  height:14rem;
   background: #e1ccc9;
   display: grid;
   grid-template-columns: 60% 40%;
@@ -30,11 +30,11 @@ header{
 header > .h1-wrapper > h1{
   letter-spacing: 1.6rem;
   color: #715353;
-  font-size: 4rem;
+  font-size: 3.5rem;
   width:30rem;
-  height:8rem;
+  height:6rem;
   margin: 4rem auto;
-  line-height: 8rem;
+  line-height: 6rem;
   text-align: center;
   background: #eee;
   position: relative;
@@ -53,15 +53,15 @@ header > .h1-wrapper > h1::before{
 header > .h1-wrapper > h1::after{
   content: '';
   position: absolute;
-  width:15rem;
+  width:40%;
   border: 2px solid #dbb6b0;
   top:50%;
   left:100%;
 }
 
 header > .img-wrapper{
-  width:12rem;
-  height: 12rem;
+  width:10rem;
+  height: 10rem;
   border-radius: 50%;
   border:0.5rem solid #dbb6b0;
   overflow: hidden;
@@ -82,7 +82,7 @@ main{
   height: 68rem;
   display: grid;
   grid-template-columns: 20% 20% 25% 15% 20%;
-  grid-template-rows: 16rem 4rem 12rem 36rem;
+  grid-template-rows: 16rem 3.6rem 12rem 36rem;
   grid-template-areas: 
     "education education education basics basics"
     "skillHead skillHead skillHead skillHead skillHead"
@@ -103,8 +103,8 @@ main{
 
 .education > h2{
   display: inline-block;
-  height:50%;
-  padding-top: 4rem;
+  height:42%;
+  padding-top: 3rem;
   color:#b38578;
 }
 
@@ -129,7 +129,7 @@ main{
 .education > .educationDetails > #uoa{
   width:100%;
   display: grid;
-  grid-template-columns: 20% 40% 15% 25%;
+  grid-template-columns: 22% 38% 15% 25%;
   grid-template-rows: auto;
   grid-template-areas:
     "uni major gpa time"
@@ -174,7 +174,7 @@ main{
 .education > .educationDetails > #xmu{
   width:100%;
   display: grid;
-  grid-template-columns: 20% 40% 15% 25%;
+  grid-template-columns: 22% 38% 15% 25%;
   grid-template-rows: auto;
   grid-template-areas:
     "uni major gpa time"
@@ -195,7 +195,7 @@ main{
   position: absolute;
   border:0.5rem solid #e1ccc9;
   border-radius: 50%;
-  left: -50%;
+  left: -28%;
 }
 
 .education > .educationDetails > #xmu > span:nth-of-type(2){
@@ -226,12 +226,12 @@ main{
   content: '';
   position: absolute;
   border:1px solid #e1ccc9;
-  height: 16rem;
+  height: 92%;
   left:10%;
 }
 
 .basics > #basics {
-  margin:5rem 0 0 7rem;
+  margin:3rem 0 0 4.3rem;
   position: relative;
 }
 
@@ -341,7 +341,7 @@ main{
 .skillVis{
   grid-area: skillVis;
   position: relative;
-  padding: 2rem 1rem 0 20%;
+  padding: 1rem 1rem 0 20%;
 }
 
 .skillVis > h3{
@@ -396,7 +396,7 @@ main{
 
 .skills{
   grid-area:skills;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 .skills > p{
