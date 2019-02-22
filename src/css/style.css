@@ -79,10 +79,9 @@ header > .img-wrapper > img{
 /* MAIN */
 main{
   width:100%;
-  height: 68rem;
   display: grid;
   grid-template-columns: 20% 20% 25% 15% 20%;
-  grid-template-rows: 16rem 3.6rem 12rem 36rem;
+  grid-template-rows: 16rem 3.6rem 12rem 1fr;
   grid-template-areas: 
     "education education education basics basics"
     "skillHead skillHead skillHead skillHead skillHead"
@@ -420,12 +419,15 @@ main{
   grid-area:projects;
   display: grid;
   grid-template-columns: repeat(3,33.333%);
-  grid-template-rows: 4rem 12rem 10rem 10rem;
+  grid-template-rows: 4.6rem 12rem 10rem 10rem 6rem 10rem;
   grid-template-areas: 
     ". heading ."
     "pro1 descr1 descr1"
     "pro2 descr2 descr2"
-    "pro3 descr3 descr3";
+    "pro3 descr3 descr3"
+    ". tbc ."
+    "pro4 descr4 descr4"
+    "pro5 descr5 descr5";
 
 }
 
@@ -446,7 +448,7 @@ main{
   display: inline-block;
   color:#fff;
   background:#e1ccc9;
-  padding: 0.8rem 3rem 0.8rem 5rem;
+  padding: 0.8rem 3rem 0.8rem 3rem;
   letter-spacing: 1rem;
   margin-top: 0.8rem;
   position: relative;
@@ -507,19 +509,11 @@ main{
 
 }
 
-.projects > .proName.project1 > p{
-  margin: 0.7rem 0;
-}
-
-.projects > .proName.project1 > p a{
-  color:#b38578;
-  padding-left: 1rem;
-}
-
 .projects > .proName.project1 > .comment{
   font-size: 0.8rem;
   color: #dbb6b0;
-  padding: 0 1rem;
+  padding: 0 1rem 0 2rem;
+  text-align: left;
 }
 
 .projects > .proName.project1 > .comment > em{
@@ -528,12 +522,7 @@ main{
 
 .projects > .description.project1{
   grid-area: descr1;
-  padding: 1rem 1rem 0 2rem;
-}
-
-.projects > .description.project1 > p{
-  line-height: 1.7rem;
-  margin-top: 0.8rem;
+  padding: 1rem 2rem 0 2rem;
 }
 
 .projects > .proName.project2::before{ /*divider*/
@@ -562,29 +551,8 @@ main{
   text-align: center;
 }
 
-.projects > .proName.project2 > h3{
-  font-size: 1rem;
-  margin: 2rem auto 1rem auto;
-}
-
-.projects > .proName.project2 > p{
-  margin: 0.7rem 0;
-}
-
-.projects > .proName.project2 > p a{
-  color:#b38578;
-  padding-left: 1rem;
-}
-
 .projects > .description.project2{
   grid-area: descr2;
-  padding: 1rem 1rem 0 2rem;
-  position: relative;
-}
-
-.projects > .description.project2 > p{
-  line-height: 1.7rem;
-  margin-top: 0.8rem;
 }
 
 .projects > .proName.project3::before{ /*divider*/
@@ -612,29 +580,73 @@ main{
   text-align: center;
 }
 
-.projects > .proName.project3 > h3{
-  font-size: 1rem;
-  margin: 2rem auto 1rem auto;
-}
-
-.projects > .proName.project3 > p{
-  margin: 0.7rem 0;
-}
-
-.projects > .proName.project3 > p a{
-  color:#b38578;
-  padding-left: 1rem;
-}
-
 .projects > .description.project3{
   grid-area: descr3;
-  padding: 1rem 1rem 0 2rem;
-  position: relative;
 }
 
-.projects > .description.project3 > p{
-  line-height: 1.7rem;
-  margin-top: 0.8rem;
+.projects > .proName.project4::before{ /*divider*/
+  position: absolute;
+  content: '';
+  width:90%;
+  left:10%;
+  top: -5%;
+  border:1px dashed #e1ccc9;
+}
+
+.projects > .description.project4::before{ /*divider*/
+  position: absolute;
+  content: '';
+  width:90%;
+  right:10%;
+  top: -5%;
+  border:1px dashed #e1ccc9;
+}
+
+/* divider */
+.tbc{
+  grid-area: tbc;
+  text-align: center;
+  color: #dbb6b0;
+}
+
+/* FOURTH PROJECT */
+.projects > .proName.project4{
+  grid-area: pro4;
+  position: relative;
+  text-align: center;
+}
+
+.projects > .description.project4{
+  grid-area: descr4;
+}
+
+.projects > .proName.project5::before{ /*divider*/
+  position: absolute;
+  content: '';
+  width:90%;
+  left:10%;
+  top: -5%;
+  border:1px dashed #e1ccc9;
+}
+
+.projects > .description.project5::before{ /*divider*/
+  position: absolute;
+  content: '';
+  width:90%;
+  right:10%;
+  top: -5%;
+  border:1px dashed #e1ccc9;
+}
+
+/* FIFTH PROJECT */
+.projects > .proName.project5{
+  grid-area: pro5;
+  position: relative;
+  text-align: center;
+}
+
+.projects > .description.project5{
+  grid-area: descr5;
 }
 
 /* FOOTER */

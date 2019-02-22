@@ -34,3 +34,31 @@
     data:data_basics
   })
 }
+
+{
+  let data_projects={
+    pro_style_descr:{
+      padding: '0rem 2rem 0 2rem',
+      position: 'relative'
+    },
+    pro_style_descr_p:{
+      lineHeight: '1.7rem',
+      marginTop: '0.8rem'
+    },
+    pro_style_a:{
+      color:'#b38578',
+      paddingLeft: '1rem'
+    },
+    pro_style_p:{
+      margin:'0.6rem 0'
+    },
+    pro_style_h3:{
+      fontSize: '1rem',
+      margin: '2rem auto 1rem auto'
+    }
+  };
+  let vm_projects = new Vue({
+    el:'section.projects',
+    data:data_projects
+  })
+}
