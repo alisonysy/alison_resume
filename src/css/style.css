@@ -43,7 +43,7 @@ header > .h1-wrapper > h1{
 header > .h1-wrapper > h1::before{
   content: "";
   position: absolute;
-  height: 90%;
+  height: 88%;
   width:97%;
   border:2px solid #dbb6b0;
   top: 3%;
@@ -57,6 +57,12 @@ header > .h1-wrapper > h1::after{
   border: 2px solid #dbb6b0;
   top:50%;
   left:100%;
+}
+
+.h1-wrapper > h1 > p{
+  font-size: 1rem;
+  letter-spacing: 0.6rem;
+  line-height: 4rem;
 }
 
 header > .img-wrapper{
