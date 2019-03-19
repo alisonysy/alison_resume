@@ -29,7 +29,8 @@
             <span>{{uoa.major}}</span>
             <span>{{uoa.gpa}}</span>
             <span>{{uoa.time}}</span>
-            <p>主修课程：数据挖掘，数据可视化，数据库，项目管理，市场调查等</p>
+            <p>专业成绩前<strong>10%</strong>，是国际性荣誉商学组织<strong>Beta Gamma Sigma</strong>的终身会员</p>
+            
           </div>
           <div id="xmu" class="uni">
             <span><strong>{{xmu.uni}}</strong>(未完成)</span>
@@ -75,15 +76,15 @@
           <h2>项目<span>Projects</span></h2>
         </div>
         <div class="proName project1">
-          <h3>在线音乐播放APP(开发中)</h3>
-          <p class="comment" v-bind:style="pro_style_p"><em>备注：</em>项目开发阶段是利用Node.js搭建本地服务器进行接口对接和页面渲染模拟，请点击下面GitHub源码查看搭建本地服务器</p>
+          <h3>在线音乐播放APP</h3>
+          <!--<p class="comment" v-bind:style="pro_style_p"><em>备注：</em>项目开发阶段是利用Node.js搭建本地服务器进行接口对接和页面渲染模拟，请点击下面GitHub源码查看搭建本地服务器</p>-->
           <p v-bind:style="pro_style_p"><a href="https://github.com/alisonysy/mockup163" v-bind:style="pro_style_a">GitHub源码和Demo(点我)</a></p>
           <p v-bind:style="pro_style_p"><a href="https://github.com/alisonysy/alison_resume/blob/master/src/img/app-demo.mp4" download v-bind:style="pro_style_a">Demo小视频(点我)</a></p>
         </div>
         <div class="description project1">
           <p v-bind:style="pro_style_descr_p">
             <strong>作品描述：</strong>
-            模拟一个音乐APP在线播放页面，包含PC端的歌曲上传和管理页面。管理员能对音乐文件进行增删改查，用户能在线听音乐，查看滚动播放歌词等。本项目是通过七牛云、LeanCloud数据库储存上传的音乐文件和相关信息。
+            模拟一个<strong>手机</strong>音乐APP在线播放页面，包含PC端的歌曲上传和管理页面。用户端有歌单、最新歌曲、热歌榜界面(内置Counter)，以及搜索功能(RegExp)，能在线听音乐，查看滚动播放歌词等。本项目是通过七牛云、LeanCloud数据库储存上传的音乐文件和相关信息。
           </p>
           <p v-bind:style="pro_style_descr_p">
               <strong>实现技术：</strong>
