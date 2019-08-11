@@ -73,19 +73,20 @@
     <section class="skillVis">
       <h3>HTML 5 &amp; CSS 3</h3>
       <div class="progress"></div>
-      <h3>JavaScript</h3>
+      <h3>JavaScript, JQuery</h3>
       <div class="progress"></div>
       <h3>Vue.js</h3>
       <div class="progress"></div>
-      <h3>jQuery</h3>
+      <h3>React Native</h3>
       <div class="progress"></div>
     </section>
     <section class="skills">
       <p>
-        熟练掌握<strong>HTML(5)、CSS(3)</strong>和<strong>JavaScript(ES6)</strong>等前端技术，如HTML5语义化标签运用，<strong>箭头函数、Promise、async/await进行异步操作</strong>，CSS3媒体查询、动画等
+        熟练掌握<strong>HTML(5)、CSS(3)</strong>和<strong>JavaScript(ES6)</strong>等前端技术，如HTML5语义化标签运用，<strong>箭头函数、Promise、async/await进行异步操作</strong>，CSS3媒体查询、动画和<strong>Grid布局</strong>等
       </p>
-      <p>熟练<strong>Vue.js</strong>前端框架，有使用Vue.js和<strong>jQuery</strong>的项目经验</p>
-      <p>使用原生JS实现动态响应网页和较复杂功能，熟悉并实践<strong>MVC设计模式</strong></p>
+      <p>熟练<strong>Vue.js</strong>和<strong>ReactJS</strong>前端框架，熟练使用<strong>jQuery</strong></p>
+      <p>熟练使用<strong>React Native</strong>开发app，结合XCode进行<strong>iOS</strong> app开发</p>
+      <!-- <p>使用原生JS实现动态响应网页和较复杂功能，熟悉并实践<strong>MVC设计模式</strong></p> -->
       <p>熟悉<strong>移动端开发</strong>，实现响应式布局，了解HTTP基础和Node.js后端基础知识</p>
     </section>
     <section class="projects">
@@ -101,7 +102,7 @@
       </div>
       <div class="description project1">
         <p v-bind:style="pro_style_descr_p">
-          <strong>作品描述：</strong>
+          <strong>描述：</strong>
           利用CNode社区提供的API，使用<strong>Vue-CLI
             3</strong>手脚架、Vue组件、<strong>Vue-router</strong>搭建仿CNode社区项目。使用<strong>Axios</strong>发送网页数据请求，运用CSS 3的 SVG 和
           filter，与Vue.js transition结合重新布局。
@@ -122,7 +123,7 @@
       </div>
       <div class="description project2" v-bind:style="pro_style_descr">
         <p v-bind:style="pro_style_descr_p">
-          <strong>作品描述：</strong>
+          <strong>描述：</strong>
           模拟一个<strong>手机</strong>音乐APP在线播放页面，包含PC端的歌曲上传和管理页面。用户端有歌单、最新歌曲、热歌榜界面(内置Counter)，以及搜索功能(Debouncing)，能在线听音乐，查看滚动播放歌词等。本项目是通过七牛云、LeanCloud数据库储存上传的音乐文件和相关信息。
         </p>
         <p v-bind:style="pro_style_descr_p">
@@ -139,7 +140,7 @@
       </div>
       <div class="description project3" v-bind:style="pro_style_descr">
         <p v-bind:style="pro_style_descr_p">
-          <strong>作品描述：</strong>
+          <strong>描述：</strong>
           用户可自定义的快捷导航页，模拟键盘界面，按下对应的键盘键自动打开新标签页并跳转到目标网站。
           用户可点击每个快捷按键右下方的E添加/覆盖自定义网站。
         </p>
@@ -157,7 +158,7 @@
       </div>
       <div class="description project4" v-bind:style="pro_style_descr">
         <p v-bind:style="pro_style_descr_p">
-          <strong>作品描述：</strong>
+          <strong>描述：</strong>
           一个个人简历动态网站，包含基本信息、技能、作品集、实时留言功能等4个模块。实现置顶菜单栏下拉悬浮，
           模块点击切换动态效果，利用异步操作实现实时留言功能。
         </p>
@@ -175,13 +176,13 @@
       </div>
       <div class="description project5" v-bind:style="pro_style_descr">
         <p v-bind:style="pro_style_descr_p">
-          <strong>作品描述：</strong>
+          <strong>描述：</strong>
           一个在线的画板。用户可以选择画笔的颜色、粗细，使用鼠标或手机端触屏写备注或画画，
           可以使用橡皮擦或整个页面清除，也可点击保存下载自己的作品。
         </p>
         <p v-bind:style="pro_style_descr_p">
           <strong>实现技术：</strong>
-          原生JavaScript + HTML + CSS
+          原生JavaScript + HTML + CSS + DOM事件监听
         </p>
       </div>
       <div class="proName project6">
@@ -192,7 +193,7 @@
       </div>
       <div class="description project6" v-bind:style="pro_style_descr">
         <p v-bind:style="pro_style_descr_p">
-          <strong>作品描述：</strong>
+          <strong>描述：</strong>
           此作品为奥克兰大学数据可视化课程的小组作业，通过数据展示新西兰青少年自杀现状、与其他国家对比，
           再深入挖掘新西兰政府对该社会问题的态度和投入，最后呼吁大家从身边事做起，让青少年健康成长。本人全程
           参与数据搜集，负责第二部分自残率和第五部分政府的青少年心理健康计划的可视化。
@@ -203,17 +204,15 @@
         </p>
       </div>
       <div class="proName project7">
-        <h3 v-bind:style="pro_style_h3">Tableau-<br>澳大利亚旅客画像</h3>
+        <h3 v-bind:style="pro_style_h3">智能家居app</h3>
         <p v-bind:style="pro_style_p"><a target="_blank"
-            href="https://public.tableau.com/views/AlisonWeng-whatdoaustralianvisitorslooklike/Dashboard2?:embed=y&:display_count=yes"
-            v-bind:style="pro_style_a">Tableau展示链接</a></p>
+            href="https://apps.apple.com/us/app/pitaka/id1312735288"
+            v-bind:style="pro_style_a">App在App Store(iOS)链接</a></p>
       </div>
       <div class="description project7" v-bind:style="pro_style_descr">
         <p v-bind:style="pro_style_descr_p">
-          <strong>作品描述：</strong>
-          此作品为奥克兰大学数据可视化课程的个人作业，通过数据展示澳大利亚旅客在来新西兰旅客的占比、年龄分布、
-          过境目的、逗留时长等，最后总结出他们的画像。此作品从数据搜集、整理、可视化构思和制作、课堂展示，全部
-          由本人完成。
+          <strong>描述：</strong>
+          目前为管理智能磁吸充电座的平台，通过请求和渲染后台数据，为用户提供管理、操作智能硬件的界面，如查看
         </p>
         <p v-bind:style="pro_style_descr_p">
           <strong>实现技术：</strong>

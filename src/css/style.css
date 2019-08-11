@@ -387,16 +387,16 @@ main{
   content:'';
   height: 0.4rem;
   border-radius: 10px;
-  width: 73%;
+  width: 67%;
   background: #b38578;
 }
 
-.skillVis > div:nth-of-type(4)::before{ /* jQuery */
+.skillVis > div:nth-of-type(4)::before{ /* React Native */
   position: absolute;
   content:'';
   height: 0.4rem;
   border-radius: 10px;
-  width: 60%;
+  width: 76%;
   background: #b38578;
 }
 
