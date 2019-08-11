@@ -94,13 +94,29 @@
         <h2>项目<span>Projects</span></h2>
       </div>
       <div class="proName project1">
-        <h3>Vue.js实现CNode社区</h3>
+        <h3 v-bind:style="pro_style_h3">智能家居app</h3>
+        <p v-bind:style="pro_style_p"><a target="_blank"
+            href="https://apps.apple.com/us/app/pitaka/id1312735288"
+            v-bind:style="pro_style_a">App在App Store(iOS)链接</a></p>
+      </div>
+      <div class="description project1" v-bind:style="pro_style_descr">
+        <p v-bind:style="pro_style_descr_p">
+          <strong>描述：</strong>
+          目前为管理智能磁吸充电座的平台，通过请求和渲染后台数据，为用户提供管理、操作智能硬件的界面，如<strong>新增连接设备、查看设备充电情况、修改设备名称和推送设置</strong>等，并具有<strong>注册验证</strong>功能。
+        </p>
+        <p v-bind:style="pro_style_descr_p">
+          <strong>实现技术：</strong>
+          React Native + JPush + XCode/Android Studio
+        </p>
+      </div>
+      <div class="proName project2">
+        <h3 v-bind:style="pro_style_h3">Vue.js实现CNode社区</h3>
         <p v-bind:style="pro_style_p"><a href="https://alisonysy.github.io/vuecnode/" target="_blank"
             v-bind:style="pro_style_a">Demo(点我)</a></p>
         <p v-bind:style="pro_style_p"><a href="https://github.com/alisonysy/vuecnode" target="_blank"
             v-bind:style="pro_style_a">GitHub源码(点我)</a></p>
       </div>
-      <div class="description project1">
+      <div class="description project2" v-bind:style="pro_style_descr">
         <p v-bind:style="pro_style_descr_p">
           <strong>描述：</strong>
           利用CNode社区提供的API，使用<strong>Vue-CLI
@@ -112,7 +128,7 @@
           Vue.js(Vue-CLI 3, Vue-router)+ Axios + JavaScript(ES6) + CSS 3
         </p>
       </div>
-      <div class="proName project2">
+      <div class="proName project3">
         <h3 v-bind:style="pro_style_h3">在线音乐播放APP</h3>
         <!--<p class="comment" v-bind:style="pro_style_p"><em>备注：</em>项目开发阶段是利用Node.js搭建本地服务器进行接口对接和页面渲染模拟，请点击下面GitHub源码查看搭建本地服务器</p>-->
         <p v-bind:style="pro_style_p"><a href="https://github.com/alisonysy/mockup163" target="_blank"
@@ -121,7 +137,7 @@
             href="https://github.com/alisonysy/alison_resume/blob/master/src/img/app-demo.mp4" download
             v-bind:style="pro_style_a">Demo小视频(点我)</a></p>
       </div>
-      <div class="description project2" v-bind:style="pro_style_descr">
+      <div class="description project3" v-bind:style="pro_style_descr">
         <p v-bind:style="pro_style_descr_p">
           <strong>描述：</strong>
           模拟一个<strong>手机</strong>音乐APP在线播放页面，包含PC端的歌曲上传和管理页面。用户端有歌单、最新歌曲、热歌榜界面(内置Counter)，以及搜索功能(Debouncing)，能在线听音乐，查看滚动播放歌词等。本项目是通过七牛云、LeanCloud数据库储存上传的音乐文件和相关信息。
@@ -131,14 +147,14 @@
           JavaScript(ES6) + JQuery + HTML + CSS + 七牛云 + LeanCloud
         </p>
       </div>
-      <div class="proName project3">
+      <div class="proName project4">
         <h3 v-bind:style="pro_style_h3">快捷导航页面</h3>
         <p v-bind:style="pro_style_p"><a href="https://alisonysy.github.io/practice-project/nav-demo/index.html"
             target="_blank" v-bind:style="pro_style_a">Demo链接(点我)</a></p>
         <p v-bind:style="pro_style_p"><a href="https://github.com/alisonysy/practice-project/tree/master/nav-demo"
             target="_blank" v-bind:style="pro_style_a">GitHub源码(点我)</a></p>
       </div>
-      <div class="description project3" v-bind:style="pro_style_descr">
+      <div class="description project4" v-bind:style="pro_style_descr">
         <p v-bind:style="pro_style_descr_p">
           <strong>描述：</strong>
           用户可自定义的快捷导航页，模拟键盘界面，按下对应的键盘键自动打开新标签页并跳转到目标网站。
@@ -149,14 +165,14 @@
           JavaScript(e.g. WebAPI、事件监听) + HTML + CSS
         </p>
       </div>
-      <div class="proName project4">
+      <div class="proName project5">
         <h3 v-bind:style="pro_style_h3">个人简历网站模板</h3>
         <p v-bind:style="pro_style_p"><a href="https://alisonysy.github.io/practice-project/index.html" target="_blank"
             v-bind:style="pro_style_a">Demo链接(点我)</a></p>
         <p v-bind:style="pro_style_p"><a href="https://github.com/alisonysy/practice-project" target="_blank"
             v-bind:style="pro_style_a">GitHub源码(点我)</a></p>
       </div>
-      <div class="description project4" v-bind:style="pro_style_descr">
+      <div class="description project5" v-bind:style="pro_style_descr">
         <p v-bind:style="pro_style_descr_p">
           <strong>描述：</strong>
           一个个人简历动态网站，包含基本信息、技能、作品集、实时留言功能等4个模块。实现置顶菜单栏下拉悬浮，
@@ -167,14 +183,14 @@
           JavaScript + HTML + CSS + Swiper库 + Tween库
         </p>
       </div>
-      <div class="proName project5">
+      <div class="proName project6">
         <h3 v-bind:style="pro_style_h3">在线画板</h3>
         <p v-bind:style="pro_style_p"><a href="https://alisonysy.github.io/practice-project/canvas/canvas.html"
             target="_blank" v-bind:style="pro_style_a">Demo链接(点我)</a></p>
         <p v-bind:style="pro_style_p"><a href="https://github.com/alisonysy/practice-project/tree/master/canvas"
             target="_blank" v-bind:style="pro_style_a">GitHub源码(点我)</a></p>
       </div>
-      <div class="description project5" v-bind:style="pro_style_descr">
+      <div class="description project6" v-bind:style="pro_style_descr">
         <p v-bind:style="pro_style_descr_p">
           <strong>描述：</strong>
           一个在线的画板。用户可以选择画笔的颜色、粗细，使用鼠标或手机端触屏写备注或画画，
@@ -185,13 +201,13 @@
           原生JavaScript + HTML + CSS + DOM事件监听
         </p>
       </div>
-      <div class="proName project6">
+      <div class="proName project7">
         <h3 v-bind:style="pro_style_h3">Tableau-<br>青少年自杀数据可视化</h3>
         <p v-bind:style="pro_style_p"><a target="_blank"
             href="https://public.tableau.com/views/Group1392WORKBOOKV2_0-Alison/FINAL?:embed=y&:display_count=yes"
             v-bind:style="pro_style_a">Tableau展示链接</a></p>
       </div>
-      <div class="description project6" v-bind:style="pro_style_descr">
+      <div class="description project7" v-bind:style="pro_style_descr">
         <p v-bind:style="pro_style_descr_p">
           <strong>描述：</strong>
           此作品为奥克兰大学数据可视化课程的小组作业，通过数据展示新西兰青少年自杀现状、与其他国家对比，
@@ -203,46 +219,30 @@
           Tableau
         </p>
       </div>
-      <div class="proName project7">
-        <h3 v-bind:style="pro_style_h3">智能家居app</h3>
-        <p v-bind:style="pro_style_p"><a target="_blank"
-            href="https://apps.apple.com/us/app/pitaka/id1312735288"
-            v-bind:style="pro_style_a">App在App Store(iOS)链接</a></p>
-      </div>
-      <div class="description project7" v-bind:style="pro_style_descr">
-        <p v-bind:style="pro_style_descr_p">
-          <strong>描述：</strong>
-          目前为管理智能磁吸充电座的平台，通过请求和渲染后台数据，为用户提供管理、操作智能硬件的界面，如查看
-        </p>
-        <p v-bind:style="pro_style_descr_p">
-          <strong>实现技术：</strong>
-          Tableau
-        </p>
-      </div>
       <div class="tbc">To Be Continued Next Page</div>
     </section>
     <section class="internship">
       <div class="heading">
-        <h2>实习经历<span>Internship</span></h2>
+        <h2>工作经历<span>Experience</span></h2>
       </div>
-      <span class="intern_h1_1"><strong>{{company.jd}}</strong></span><span
-        class="intern_h1_2">{{position.jd}}</span><span class="intern_h1_3">{{time.jd}}</span>
+      <span class="intern_h1_1"><strong>{{company.pt}}</strong></span><span
+        class="intern_h1_2">{{position.pt}}</span><span class="intern_h1_3">{{time.pt}}</span>
       <ul class="intern_d1">
+        <li v-for="value in descr_pt">
+          {{value}}
+        </li>
+      </ul>
+      <span class="intern_h2_1"><strong>{{company.jd}}</strong></span><span
+        class="intern_h2_2">{{position.jd}}</span><span class="intern_h2_3">{{time.jd}}</span>
+      <ul class="intern_d2">
         <li v-for="value in descr_jd">
           {{value}}
         </li>
       </ul>
-      <span class="intern_h2_1"><strong>{{company.ag}}</strong></span><span
-        class="intern_h2_2">{{position.ag}}</span><span class="intern_h2_3">{{time.ag}}</span>
-      <ul class="intern_d2">
-        <li v-for="value in descr_ag">
-          {{value}}
-        </li>
-      </ul>
-      <span class="intern_h3_1"><strong>{{company.yt}}</strong></span><span
-        class="intern_h3_2">{{position.yt}}</span><span class="intern_h3_3">{{time.yt}}</span>
+      <span class="intern_h3_1"><strong>{{company.ag}}</strong></span><span
+        class="intern_h3_2">{{position.ag}}</span><span class="intern_h3_3">{{time.ag}}</span>
       <ul class="intern_d3">
-        <li v-for="value in descr_yt">
+        <li v-for="value in descr_ag">
           {{value}}
         </li>
       </ul>
